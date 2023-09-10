@@ -1,9 +1,13 @@
+@font-face {
+  font-family:Jim Nightshade ;
+  src: url(../Fonts/Jim_Nightshade/JimNightshade-Regular.ttf);
+}
 .navbar-row{
   display: flex;
   padding-top: 2%;
 }
 .logo{
-  flex: 50%;
+  flex: 60%;
   padding: 0% 15%;
   color: #FFF;
   font-family: Jim Nightshade;
@@ -11,11 +15,20 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  font-size: larger;
+  margin-top: 8px;
 }
 .nav-links{
   list-style: none;
   display: flex;
-  flex:50%;
-  justify-content: space-around;
-  
+  flex:40%;
+  gap:8%;
+  background-color: black;
+  transition:  0.3s ease-in-out; /* Animation transition */
+  cursor: pointer;
+}
+.nav-links :hover
+{
+   background-color: rgb(85, 83, 79); /* New background color on hover */
+  transform: scale(1.1);
 }
