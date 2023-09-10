@@ -1,11 +1,16 @@
 
 import './App.css';
+import LandingBody from './Body/body';
 import Navbar from './Navbar/navbar';
+
 
 function App() {
   return (
-   <Navbar/>
- );
+    <div>
+      <Navbar />
+      <LandingBody />
+    </div>
+  );
 }
 
 export default App;
