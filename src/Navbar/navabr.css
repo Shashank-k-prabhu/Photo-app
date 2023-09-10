@@ -2,6 +2,7 @@
   font-family:Jim Nightshade ;
   src: url(../Fonts/Jim_Nightshade/JimNightshade-Regular.ttf);
 }
+
 .navbar-row{
   display: flex;
   padding-top: 2%;
@@ -11,11 +12,9 @@
   padding: 0% 15%;
   color: #FFF;
   font-family: Jim Nightshade;
-  font-size: 96px;
+  font-size: 100px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  font-size: larger;
   margin-top: 8px;
 }
 .nav-links{
@@ -26,6 +25,7 @@
   background-color: black;
   transition:  0.3s ease-in-out; /* Animation transition */
   cursor: pointer;
+  
 }
 .nav-links :hover
 {
