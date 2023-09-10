@@ -1,0 +1,21 @@
+.navbar-row{
+  display: flex;
+  padding-top: 2%;
+}
+.logo{
+  flex: 50%;
+  padding: 0% 15%;
+  color: #FFF;
+  font-family: Jim Nightshade;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.nav-links{
+  list-style: none;
+  display: flex;
+  flex:50%;
+  justify-content: space-around;
+  
+}
