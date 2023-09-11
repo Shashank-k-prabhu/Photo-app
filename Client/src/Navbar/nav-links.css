@@ -1,0 +1,14 @@
+@font-face {
+  font-family: Indie_Flower;
+  src: url(../Fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
+li{
+  font-size: large;
+  padding: 4% ;
+  color: white;
+  border-radius: 5%;
+  font-family: Indie_Flower;
+  font-weight: 400;
+  font-size: 30px;
+}
+
