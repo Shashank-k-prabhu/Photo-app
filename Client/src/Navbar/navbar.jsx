@@ -11,7 +11,7 @@ function Navbar(){
         <nav className="nav-links">
           <Navlinks name="HOME" />
           <Navlinks name="PORTFOLIO" />
-          <Navlinks name="CONTACT" />
+          <Navlinks name="CONTACT US" />
         </nav>
       </div>
     </Container>
