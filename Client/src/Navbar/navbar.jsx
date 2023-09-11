@@ -9,7 +9,7 @@ function Navbar(){
           PIXELPALS
         </div>
         <nav className="nav-links">
-          <Navlinks name="HOUSE" />
+          <Navlinks name="HOME" />
           <Navlinks name="PORTFOLIO" />
           <Navlinks name="CONTACT" />
         </nav>
