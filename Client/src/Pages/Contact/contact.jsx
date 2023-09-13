@@ -1,8 +1,15 @@
+import React from "react"
+import Header from "./Header"
+import Body from "./Body"
+import EnquiryForm from "./EnquiryForm"
 const Contact = ()=>{
   return (
-    //Write code below for contact page here without navbar
-    <div>contact us</div>
-
+    <div>
+      <Header />
+      <Body>
+        <EnquiryForm/>
+      </Body>
+    </div>
   );
 }
 export default Contact;

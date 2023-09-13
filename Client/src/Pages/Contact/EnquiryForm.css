@@ -1,0 +1,78 @@
+form{
+    background-color: white;
+    width:600px;
+    height:680px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.enquiry-form {
+    color: black;
+    text-align: center;
+    line-height: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 48;
+    font-stretch: normal;
+    font-style:normal;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .label {
+    color: black;
+    height: auto;
+    text-align: center;
+    line-height: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    font-stretch: normal;
+    font-style: italic;
+    font-weight: 400;
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+ .box{
+    background-color:whitesmoke;
+    width: 516px;
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    overflow: hidden;
+ }
+ .msg{background-color: whitesmoke ;
+    width: 516px;
+    height: 205px;
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    overflow: hidden;
+
+ }
+  
+  button[type="submit"] {
+    background-color: purple;
+    align-items: center;
+    color: white;
+    border: black;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #7b1fa2; /* Darker purple on hover */
+  }
+  
