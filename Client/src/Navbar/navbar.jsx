@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import {Link} from 'react-router-dom';
 import "./navabr.css"
 import Navlinks from "./nav-links";
 function Navbar(){
@@ -9,9 +10,12 @@ function Navbar(){
           PIXELPALS
         </div>
         <nav className="nav-links">
+          
           <Navlinks name="HOME" />
           <Navlinks name="PORTFOLIO" />
-          <Navlinks name="CONTACT US" />
+          
+          <Link to="/Contact">CONTACT US</Link>
+          
         </nav>
       </div>
     </Container>

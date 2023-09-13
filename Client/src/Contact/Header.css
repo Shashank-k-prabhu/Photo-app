@@ -1,0 +1,30 @@
+.pixelpals {
+    position: relative;
+    display: inline-block;
+    width: 454px;
+    flex-shrink: 0;
+    -webkit-text-stroke: 1px #000;
+  }
+  .contactUs,
+  .pixelpalsParent {
+    display: flex;
+    align-items: center;
+  }
+  .contactUs {
+    position: relative;
+    font-size: var(--font-size-29xl);
+    font-family: var(--font-annie-use-your-telescope);
+    justify-content: center;
+    width: 275px;
+    height: 137px;
+    flex-shrink: 0;
+  }
+  .pixelpalsParent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1440px;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 666px;
+  }
