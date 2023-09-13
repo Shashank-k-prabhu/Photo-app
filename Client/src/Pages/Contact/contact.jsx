@@ -1,9 +1,8 @@
-const Contact = () => {
+const Contact = ()=>{
   return (
-    <div>
-      CONTACT US
-    </div>
-  );
-};
+    //Write code below for contact page here without navbar
+    <div>contact us</div>
 
+  );
+}
 export default Contact;
