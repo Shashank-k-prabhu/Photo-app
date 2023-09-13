@@ -2,6 +2,10 @@
   font-family:Jim Nightshade ;
   src: url(../Fonts/Jim_Nightshade/JimNightshade-Regular.ttf);
 }
+@font-face {
+  font-family: Indie_Flower;
+  src: url(../Fonts/Indie_Flower/IndieFlower-Regular.ttf);
+}
 
 .navbar-row{
   display: flex;
@@ -24,11 +28,11 @@
   gap:8%;
   background-color: black;
   transition:  0.3s ease-in-out; /* Animation transition */
-  cursor: pointer;
-  
+  cursor: pointer; 
 }
 .nav-links :hover
 {
-   background-color: rgb(85, 83, 79); /* New background color on hover */
+  color: rgb(115, 84, 200); /* New background color on hover */
   transform: scale(1.1);
 }
+
