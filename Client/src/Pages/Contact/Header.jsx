@@ -3,9 +3,9 @@ import './Header.css';
 
 function Header() {
   return (
-    <div className="pixelpalsParent">
-      <div className="pixelpals">PixelPals</div>
-      <div className="contactUs">Contact Us</div>
+    <div className="header">
+      <div className="logo">PixelPals</div>
+      <div className="side">Contact Us</div>
     </div>
   );
 }
