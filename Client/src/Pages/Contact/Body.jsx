@@ -1,15 +1,23 @@
 import React from "react";
 import EnquiryForm from "./EnquiryForm";
-import './Body.css';
-const Body = () => {
+import contactimage from "D:/Desktop/intern_proj/Photo-app/Client/src/Components/Images/contact_page.png";
+import "./Body.css";
+
+function ContactBody() {
   return (
-    <div>
-      
-        <p className="content">HAVE SOME QUESTIONS?</p>
-        <p className="text"> We're here to help! Please feel free to reach out to us by filling out the enquiry form.</p>
-      
-      <EnquiryForm />
+    <div className="container">
+      <div className="background-container">
+        <img src={contactimage} alt="Pic" className="imagestyles" />
+      </div>
+      <div className="form-align">
+        <div className="form-div">
+          <form className="form">
+            <EnquiryForm />
+          </form>
+        </div>
+      </div>
     </div>
   );
-};
-export default Body;
+}
+
+export default ContactBody;
