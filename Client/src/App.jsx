@@ -23,7 +23,7 @@ function App() {
           <Route path="" element={<ErrorPage />}></Route>;
         </Routes>
       </Router>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import landingImage from "../Images/landingImage.png"
-import "./body.css"
+import "./homeBody.css"
 function LandingBody(){
   return (
-    <div className="container">
+    <div className="home-container">
       <img src={landingImage} alt="Landing Pic" className="imagestyles"></img>
       <p className="bodytext">
         Welcome to PixelPals!!Your photography destination! Discover a diverse
