@@ -7,6 +7,7 @@ import Contact from './Pages/Contact/contact';
 import Portfolio from './Pages/Portfolio/portfolio';
 import ErrorPage from './Pages/Error_page/Errorpage';
 import Navbar from './Components/Navbar/navbar';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         </Routes>
         
       </Router>
+      <Footer/>
     </div>
   );
 }
