@@ -4,7 +4,7 @@ function LandingBody(){
   return (
     <div className="container">
       <img src={landingImage} alt="Landing Pic" className="imagestyles"></img>
-      <p>
+      <p className="bodytext">
         Welcome to PixelPals!!Your photography destination! Discover a diverse
         range of talented photographers, their contact details, and stunning
         galleries. Fulfill your photography needs anytime, anywhere. Explore and

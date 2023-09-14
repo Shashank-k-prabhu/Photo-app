@@ -10,11 +10,13 @@
 .imagestyles{
   padding-left: 5%;
 }
-p{
-  color: #FFFBFB;
+.bodytext{
+  color: white;
+  background-color: black;
   font-family: Audiowide;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-top: 5%;
 }

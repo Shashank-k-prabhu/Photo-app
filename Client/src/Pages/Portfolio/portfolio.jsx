@@ -1,7 +1,9 @@
+import Slider from "../../Components/Slider/slider";
+
 const Portfolio = () => {
   return (
     <div>
-      Portfolio
+      <Slider/>
     </div>
   );
 };
