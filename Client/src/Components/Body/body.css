@@ -5,10 +5,11 @@
 .container{
   margin: 5% 5%;
   display: flex;
-  gap:2%
+  gap: 2%;
 }
 .imagestyles{
   padding-left: 5%;
+
 }
 .bodytext{
   color: white;
@@ -18,5 +19,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-top: 5%;
+  
+  
 }

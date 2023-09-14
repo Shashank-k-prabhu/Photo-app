@@ -1,6 +1,6 @@
 import React from "react";
 import EnquiryForm from "./EnquiryForm";
-import contactimage from "D:/Desktop/intern_proj/Photo-app/Client/src/Components/Images/contact_page.png";
+import contactimage from "../../Components/Images/contact_page.png";
 import "./Body.css";
 
 function ContactBody() {
