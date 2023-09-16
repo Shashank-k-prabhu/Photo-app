@@ -2,19 +2,17 @@
     background-color: #333; 
     color: #fff; 
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    max-height:30px;
+    max-height:20px;
     text-align: center; 
-    padding: 10px;
+    padding:5px;
   }
 .container {
     margin-top: auto;
-    height: 30px;
-    width: 100%;
     text-align: center;
+    width:100%;
 }
   
 .social-icons {
