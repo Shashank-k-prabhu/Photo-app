@@ -1,5 +1,5 @@
-.container {
-    display: flex;
+.body-container {
+    z-index: 2;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
@@ -7,9 +7,15 @@
 }
 .background-container {
     width: 100%; 
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+    background-position: center top 100px; /* Adjust the value (100px) to scroll down more */
+
 }
 .imagestyles {
     width: 100%; 

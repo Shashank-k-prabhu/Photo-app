@@ -4,7 +4,7 @@ const EnquiryForm = () => {
   return (
  <div className="form-align"  >
   <form>
-    <div className="form-div" >
+    
       
         <h1 className="enquiry-form">ENQUIRY FORM</h1>
       
@@ -17,7 +17,7 @@ const EnquiryForm = () => {
         <label htmlFor="message" className="label">Your Message:</label>
         <textarea id="message" placeholder="Message"className="msg"></textarea>
         <button type="submit">SUBMIT</button>
-    </div>
+    
   </form>
   </div> 
     
