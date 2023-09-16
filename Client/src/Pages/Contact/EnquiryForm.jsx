@@ -14,9 +14,9 @@ const EnquiryForm = () => {
         <label htmlFor="phoneNumber" className="label">Phone Number:</label>
         <input type="text" id="phoneNumber" placeholder="Phone Number" className="box" />
 
-        <label htmlFor="message" className="label">Your Message:</label>
+        <label htmlFor="message" className="label" >Your Message:</label>
         <textarea id="message" placeholder="Message"className="msg"></textarea>
-        <button type="submit">SUBMIT</button>
+        <button type="submit" style={{borderRadius:'5px',marginLeft:'40%',marginTop:'5%'}}>SUBMIT</button>
     
   </form>
   </div> 
