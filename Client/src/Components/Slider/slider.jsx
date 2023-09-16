@@ -12,6 +12,7 @@ const Slider = ()=>{
       name={item.name}
       url={item.imageurl}
       description={item.description}
+      link={item.link}
     />
   ));
 
