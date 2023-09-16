@@ -9,10 +9,11 @@ import ErrorPage from './Pages/Error_page/Errorpage';
 import Navbar from './Components/Navbar/navbar';
 import Footer from './Components/Footer/Footer';
 import Wedding from './Pages/SubLinks/Wedding/wedding';
-import Birthday from './Pages/SubLinks/Birthday/birthday';
-import Dance from './Pages/SubLinks/Dance/dance';
-import Office from './Pages/SubLinks/Office/office';
-import Music from './Pages/SubLinks/Music/music';
+import Estate from './Pages/SubLinks/Estate/estate';
+import Fashion from './Pages/SubLinks/Fashion/fashion';
+import Wildlife from './Pages/SubLinks/Wildlife/wildlife';
+import Architecture from './Pages/SubLinks/Architecture/architecture';
+
 function App() {
 
   return (
@@ -24,10 +25,10 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/wedding" element={<Wedding />}></Route>
-          <Route path="/music" element={<Music />}></Route>
-          <Route path="/dance" element={<Dance />}></Route>
-          <Route path="/office" element={<Office />}></Route>
-          <Route path="/birthday" element={<Birthday />}></Route>
+          <Route path="/estate" element={<Estate/>}></Route>
+          <Route path="/fashion" element={<Fashion/>}></Route>
+          <Route path="/wildlife" element={<Wildlife/>}></Route>
+          <Route path="/architecture" element={<Architecture />}></Route>
           <Route path="*" element={<ErrorPage />}></Route>;
         </Routes>
       </Router>
