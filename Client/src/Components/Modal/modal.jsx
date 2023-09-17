@@ -42,7 +42,7 @@ export default function BasicModal({open,handleClose,selectedItem}) {
               sx={{ mt: 2 }}
               style={{backgroundColor:"white",color:"black"}}
             >
-              {selectedItem.author}
+              {selectedItem.description}
             </Typography>
           </div>
         </Box>
