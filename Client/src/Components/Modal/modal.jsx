@@ -40,7 +40,7 @@ export default function BasicModal({open,handleClose,selectedItem}) {
             <Typography
               id="modal-modal-description"
               sx={{ mt: 2 }}
-              style={{ color: "black" }}
+              style={{backgroundColor:"white",color:"black"}}
             >
               {selectedItem.author}
             </Typography>
