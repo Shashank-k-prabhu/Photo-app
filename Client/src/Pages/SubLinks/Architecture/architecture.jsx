@@ -1,4 +1,10 @@
+import GridOfImages from "../../../Components/Grid/Grid";
+import { itemData } from "./data";
 const Architecture = () => {
-  return <div style={{color:'white'}}>Architecture</div>;
+  return (
+    <div>
+      <GridOfImages itemData={itemData} />
+    </div>
+  );
 };
 export default Architecture;

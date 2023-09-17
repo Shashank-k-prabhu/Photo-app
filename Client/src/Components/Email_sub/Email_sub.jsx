@@ -1,6 +1,6 @@
 import React from "react";
 import './Email_sub.css';
-import emailimage from "D:/Desktop/intern_proj/Photo-app/Client/src/Components/Images/email.jpeg";
+import emailimage from "../Images/email.jpeg";
 function Popup(props){
     return(props.trigger) ? (
         <div className="popup">
