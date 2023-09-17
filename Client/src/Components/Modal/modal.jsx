@@ -34,15 +34,16 @@ export default function BasicModal({open,handleClose,selectedItem}) {
             alt="product"
           />
           <div className="textstyles">
-            <Typography id="modal-modal-title" variant="h6" component="h2" style={{fontSize:'3em'}}>
+            <Typography id="modal-modal-title" variant="h6" component="h2" className="title-text">
               {selectedItem.title}
             </Typography>
             <Typography
               id="modal-modal-description"
               sx={{ mt: 2 }}
               style={{backgroundColor:"white",color:"black"}}
+              className="description"
             >
-              {selectedItem.author}
+              {selectedItem.description}
             </Typography>
           </div>
         </Box>

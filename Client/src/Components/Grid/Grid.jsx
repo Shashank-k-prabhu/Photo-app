@@ -26,7 +26,8 @@ export default function Grid ({itemData}) {
               alt={item.title}
               loading="lazy"
             />
-            <ImageListItemBar position="below" title={item.title} />
+            <ImageListItemBar position="below" title={item.title}
+            style={{ color: "white", fontFamily:"fantasy", fontSize: "20px", fontStyle:"italic"}} />
           </ImageListItem>
         ))}
       </ImageList>
