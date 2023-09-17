@@ -30,7 +30,7 @@ export default function BasicModal({open,handleClose,selectedItem}) {
         <Box sx={style}>
           <img
             src={selectedItem.img}
-            className="imagestyles"
+            className="image-styles"
             alt="product"
           />
           <div className="textstyles">
