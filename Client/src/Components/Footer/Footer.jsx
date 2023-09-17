@@ -1,7 +1,7 @@
 import React ,{useState} from "react";
 import "./Footer.css";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faInstagram, faFacebook, faTwitter, faLinkedin , faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin , faGithub } from '@fortawesome/free-brands-svg-icons';
 import Popup from "../Email_sub/Email_sub";
 
 function Footer() {
@@ -17,19 +17,25 @@ function Footer() {
     return (
     <footer className="footer">
         <div className="container">
-             <button onClick={openPopup}>Subscribe</button>
+        <div className="contact-info left">
+            <p>123 Kanakapura Road</p>
+            <p>Bangalore,Karnataka,India</p>
+            <p>Email id: pixelpals@gmail.com</p>
+            </div>
+            <div>
+                <p>&copy; {new Date().getFullYear()} PIXELPALS</p>
+                <p>Designed by Shashank & Sneha</p>
+            </div>
+            <div className="right">
+            <div className="subscription">
+                <button onClick={openPopup}>Subscribe</button>
                 <Popup trigger={isPopupOpen} onClose={closePopup}>
                     <h3>Email Subscription</h3>
                 </Popup>
+            </div>
             <div className="social-icons">
                 <a href="#">
                     <FontAwesomeIcon icon={faInstagram}/>
-                </a>
-                <a  href="#">
-                    <FontAwesomeIcon icon={faFacebook}/>
-                </a>
-                <a href="#">
-                    <FontAwesomeIcon icon={faTwitter} /> 
                 </a>
                 <a href="#">
                     <FontAwesomeIcon icon={faLinkedin} /> 
@@ -38,9 +44,6 @@ function Footer() {
                     <FontAwesomeIcon icon={faGithub}/>                
                 </a>
             </div>
-            <div>
-                <p>&copy; {new Date().getFullYear()} PIXELPALS</p>
-                <p>Designed by Shashank & Sneha</p>
             </div>
         </div>
     </footer>
