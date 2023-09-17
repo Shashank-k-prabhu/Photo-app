@@ -1,32 +1,47 @@
 .footer {
-    background-color: #333; 
-    color: #fff; 
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    max-height:20px;
-    text-align: center; 
-    padding:5px;
-  }
-.container {
-    margin-top: auto;
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
     text-align: center;
-    width:100%;
 }
-  
-.social-icons {
-    margin-bottom: 10px;
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.social-icons a {
-    color: #fff;
-    font-size: 24px;
+.right {
+    flex-basis: 30%;
+    text-align: right;
+}
+.right .social-icons {
+    margin-top: 10px;
+}
+.right .social-icons a {
+    color: white;
     margin: 0 10px;
+    font-size: 20px;
     text-decoration: none;
     transition: color 0.2s;
 }
-.social-icons a:hover {
+.right .social-icons a:hover {
     color: #007bff;
+}
+.right .subscription {
+    margin-top: 10px;
+}
+.right .subscription button {
+    background-color:whitesmoke;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: right;
+    width: 100px;
+}
+.right .subscription button:hover {
+    background-color: #06192d;
 }
 p {
     margin: 0;
@@ -34,4 +49,19 @@ p {
     color: #fff;
     font-weight: bold; 
     margin-top: 10px; 
-  }
+}
+.left {
+    text-align: left;
+    flex-basis: 30%;
+    margin: 5px 0;
+    font-size: 8px;
+    font-style: italic;
+}
+@media (max-width: 768px) {
+    .left,
+    .p,
+    .right {
+flex-basis: 100%;
+text-align: center;
+    }
+}
