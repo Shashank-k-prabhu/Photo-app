@@ -3,7 +3,7 @@
   src: url(../Fonts/Audiowide/Audiowide-Regular.ttf);
 }
 .home-container{
-  margin: 5% 5%;
+  margin: 5% 3%;
   display: flex;
   gap: 2%;
 }
@@ -15,7 +15,7 @@
   color: white;
   background-color: black;
   font-family: Audiowide;
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
