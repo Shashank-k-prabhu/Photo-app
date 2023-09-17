@@ -23,30 +23,39 @@ export const slideData = [
     id: 1,
     imageurl: "http://localhost:3000/Images/wedding.png",
     name: "MOMENTS OF FOREVER: WEDDING PHOTOGRAPHY",
-    description: "Capturing love and moments that last a lifetime through the lens of my camera!",
+    description:
+      "Capturing love and moments that last a lifetime through the lens of my camera!",
+    link: "wedding",
   },
   {
     id: 2,
     imageurl: "http://localhost:3000/Images/fashion.png",
     name: "ELEGANCE IN EVERY FRAME: FASHION PHOTOGRAPHY",
-    description: "Capturing the essence of style and beauty, one click at a time!",
+    description:
+      "Capturing the essence of style and beauty, one click at a time!",
+    link: "fashion",
   },
   {
     id: 3,
     imageurl: "http://localhost:3000/Images/architecture.png",
     name: "STRUCTURES IN FOCUS:ARCHITECTURE PHOTOGRAPHY",
-    description: "Capturing the essence and intricacies of architectural wonders!",
+    description:
+      "Capturing the essence and intricacies of architectural wonders!",
+    link: "architecture",
   },
   {
     id: 4,
     imageurl: "http://localhost:3000/Images/wildlife.png",
     name: "WILD ENCOUNTERS: WILDLIFE PHOTOGRAPHY",
     description: "Journey into the untamed world, one click at a time!",
+    link: "wildlife",
   },
   {
     id: 5,
     imageurl: "http://localhost:3000/Images/realestate.png",
     name: " ESTATE ELEGANCE: REAL ESTATE PHOTOGRAPHY",
-    description: "Showcasing properties in their finest light, one frame at a time!",
+    description:
+      "Showcasing properties in their finest light, one frame at a time!",
+    link: "estate",
   },
 ];

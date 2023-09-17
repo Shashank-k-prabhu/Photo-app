@@ -6,7 +6,9 @@
   font-family: Indie_Flower;
   src: url(../Fonts/Indie_Flower/IndieFlower-Regular.ttf);
 }
-
+.navbar{
+  position: sticky;
+}
 .navbar-row{
   display: flex;
   padding-top: 2%;
