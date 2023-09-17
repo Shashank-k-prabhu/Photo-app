@@ -26,7 +26,7 @@ export default function Grid ({itemData}) {
               alt={item.title}
               loading="lazy"
             />
-            <ImageListItemBar position="below" title={item.author} />
+            <ImageListItemBar position="below" title={item.title} />
           </ImageListItem>
         ))}
       </ImageList>
