@@ -1,36 +1,34 @@
-// import modules
-  const express= require("express");
-  const mogoose=require("mongoose");
-  const morgan=require("morgan");
-  const cors = require("cors");
-const { default: mongoose } = require("mongoose");
-  require("dotenv").config();
+const express = require("express");
+const mongoose = require("mongoose");
+const morgan = require("morgan");
+const cors = require("cors");
+
+const port = 3001;
+
+const app = express();
 
 
-//app
-const app= express();
+app.use(express.json());
 
+app.use(cors());
 
-// db
-mongoose
-.connect(process.env.MONGO_URI,{
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(()=>console.log("DB CONNECTED"))
-  .catch(err=>console.log("DB CONNECTION ERROR",err));
+app.get('/', (req, res) => {
+  res.send('Server is running and this is the root.');
+});
 
-// middlerware
-app.use(morgan("dev"))
-app.use(cors({origin: true,credentials:true}));
+app.post('/api/enquiries', async (req, res) => {
+  try {
+    const enquiry = new Enquiry(req.body);
 
+    await enquiry.save();
 
-//routes
+    res.status(201).json({ message: 'Enquiry submitted successfully' });
+  } catch (error) {
+    console.error('Error submitting enquiry:', error);
+    res.status(500).json({ message: 'Internal server error' });
+  }
+});
 
-
-
-//port
-const port=process.env.port || 8080
-
-//listener
-
-const server = app.listen(port,()=> console.log(`Server is running on ${port}`));
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
