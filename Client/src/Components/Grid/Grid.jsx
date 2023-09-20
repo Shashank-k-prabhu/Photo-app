@@ -19,7 +19,7 @@ export default function Grid ({itemData}) {
     <Box className="stylingbox">
       <ImageList variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (
-          <ImageListItem key={item.img}  onClick={()=>handleOpenModal(item)}>
+          <ImageListItem key={item.img}  onClick={()=>handleOpenModal(item)} className="keyBox">
             <img
               src={`${item.img}?w=248&fit=crop&auto=format`}
               srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
