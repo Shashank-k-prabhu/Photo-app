@@ -28,7 +28,7 @@ function Footer() {
             </div>
             <div className="right">
             <div className="subscription">
-                <button onClick={openPopup}>Subscribe</button>
+                <button className="but" onClick={openPopup}>Subscribe</button>
                 <Popup trigger={isPopupOpen} onClose={closePopup}>
                     <h3>Email Subscription</h3>
                 </Popup>

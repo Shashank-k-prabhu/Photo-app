@@ -13,8 +13,8 @@
     z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Keep the background fixed while scrolling */
-    background-position: center top 100px; /* Adjust the value (100px) to scroll down more */
+    background-attachment: fixed; 
+    background-position: center top 100px; 
 
 }
 .imagestyles {

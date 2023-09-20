@@ -30,7 +30,7 @@
 .right .subscription {
     margin-top: 10px;
 }
-.right .subscription button {
+.right .subscription .but {
     background-color:whitesmoke;
     color: black;
     padding: 10px 20px;
@@ -40,7 +40,7 @@
     text-align: right;
     width: 100px;
 }
-.right .subscription button:hover {
+.right .subscription .but:hover {
     background-color: #06192d;
 }
 p {
