@@ -10,16 +10,32 @@ const app = express();
 
 app.use(express.json());
 
+
 app.use(cors());
+app.use(morgan("dev"));
+
+mongoose.connect('mongodb://localhost:27017/Enquiry_Form', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+const Enquiry = mongoose.model('Enquiry', {
+  name: String,
+  phoneNumber: Number,
+  message: String,
+});
+
 
 app.get('/', (req, res) => {
-  res.send('Server is running and this is the root.');
+  res.send('Server is running and this is the root route.');
 });
 
 app.post('/api/enquiries', async (req, res) => {
   try {
+    
     const enquiry = new Enquiry(req.body);
 
+    
     await enquiry.save();
 
     res.status(201).json({ message: 'Enquiry submitted successfully' });
@@ -29,6 +45,17 @@ app.post('/api/enquiries', async (req, res) => {
   }
 });
 
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
+});
+app.post('/api/enquiries', async (req, res) => {
+  try {
+    console.log('Received POST request'); 
+    const enquiry = new Enquiry(req.body);
+    // ...
+  } catch (error) {
+    console.error('Error:', error);
+    // ...
+  }
 });

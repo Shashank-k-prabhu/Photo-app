@@ -18,19 +18,16 @@ const EnquiryForm = () => {
     e.preventDefault();
 
     try {
-      // Send a POST request to your Express.js backend
+      
       const response = await axios.post(
-        "http://localhost:3001/api/enquiries", // Replace with your backend URL
+        "http://localhost:3001/api/enquiries", 
         formData
       );
 
       if (response.status === 201) {
-        // Handle success
         console.log("Enquiry submitted successfully");
-        // You can reset the form here if needed
         setFormData({ name: "", phoneNumber: "", message: "" });
       } else {
-        // Handle errors
         console.error("Error submitting enquiry");
       }
     } catch (error) {
