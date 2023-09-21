@@ -1,61 +1,34 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const morgan = require("morgan");
-const cors = require("cors");
-
-const port = 3001;
-
+const express = require('express');
+const mongoose = require('mongoose');
+const cors = require('cors');
 const app = express();
-
+const User = require('./models/dataschema.js');
 
 app.use(express.json());
-
-
 app.use(cors());
-app.use(morgan("dev"));
 
-mongoose.connect('mongodb://localhost:27017/Enquiry_Form', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+mongoose.connect('mongodb://localhost:27017/reactdata', { useNewUrlParser: true });
+
+app.post('/insert', async (req, res) => {
+    const { name, phoneNumber, message } = req.body;
+
+    const formData = new User({
+        name: name,
+        phoneNumber: phoneNumber,
+        message: message
+    });
+
+    try {
+        await formData.save();
+        res.send("Inserted data successfully.");
+    } catch (err) {
+        console.error(err);
+        res.status(500).send("An error occurred while inserting data.");
+    }
 });
 
-const Enquiry = mongoose.model('Enquiry', {
-  name: String,
-  phoneNumber: Number,
-  message: String,
-});
-
-
-app.get('/', (req, res) => {
-  res.send('Server is running and this is the root route.');
-});
-
-app.post('/api/enquiries', async (req, res) => {
-  try {
-    
-    const enquiry = new Enquiry(req.body);
-
-    
-    await enquiry.save();
-
-    res.status(201).json({ message: 'Enquiry submitted successfully' });
-  } catch (error) {
-    console.error('Error submitting enquiry:', error);
-    res.status(500).json({ message: 'Internal server error' });
-  }
-});
-
+const port = process.env.PORT || 4000;
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
-app.post('/api/enquiries', async (req, res) => {
-  try {
-    console.log('Received POST request'); 
-    const enquiry = new Enquiry(req.body);
-    // ...
-  } catch (error) {
-    console.error('Error:', error);
-    // ...
-  }
+    console.log(`Server started on port ${port}`);
 });
