@@ -1,3 +1,4 @@
+
 export const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -21,7 +22,7 @@ export const responsive = {
 export const slideData = [
   {
     id: 1,
-    imageurl: "http://localhost:3000/Images/wedding.png",
+    imageurl: "images/wedding.png",
     name: "MOMENTS OF FOREVER: WEDDING PHOTOGRAPHY",
     description:
       "Capturing love and moments that last a lifetime through the lens of my camera!",
@@ -29,7 +30,7 @@ export const slideData = [
   },
   {
     id: 2,
-    imageurl: "http://localhost:3000/Images/fashion.png",
+    imageurl: "images/fashion.png",
     name: "ELEGANCE IN EVERY FRAME: FASHION PHOTOGRAPHY",
     description:
       "Capturing the essence of style and beauty, one click at a time!",
@@ -37,7 +38,7 @@ export const slideData = [
   },
   {
     id: 3,
-    imageurl: "http://localhost:3000/Images/architecture.png",
+    imageurl: "images/architecture.png",
     name: "STRUCTURES IN FOCUS:ARCHITECTURE PHOTOGRAPHY",
     description:
       "Capturing the essence and intricacies of architectural wonders!",
@@ -45,14 +46,14 @@ export const slideData = [
   },
   {
     id: 4,
-    imageurl: "http://localhost:3000/Images/wildlife.png",
+    imageurl: "images/wildlife.png",
     name: "WILD ENCOUNTERS: WILDLIFE PHOTOGRAPHY",
     description: "Journey into the untamed world, one click at a time!",
     link: "wildlife",
   },
   {
     id: 5,
-    imageurl: "http://localhost:3000/Images/realestate.png",
+    imageurl: "images/realestate.png",
     name: " ESTATE ELEGANCE: REAL ESTATE PHOTOGRAPHY",
     description:
       "Showcasing properties in their finest light, one frame at a time!",

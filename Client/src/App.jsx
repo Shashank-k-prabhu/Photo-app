@@ -29,7 +29,7 @@ function App() {
           <Route path="/fashion" element={<Fashion/>}></Route>
           <Route path="/wildlife" element={<Wildlife/>}></Route>
           <Route path="/architecture" element={<Architecture />}></Route>
-          <Route path="*" element={<ErrorPage />}></Route>;
+          <Route path="*" element={<ErrorPage />}></Route>
         </Routes>
       </Router>
       <Footer />
